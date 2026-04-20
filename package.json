@@ -1,0 +1,21 @@
+{
+  "name": "ollama-vscode-copilot",
+  "displayName": "Ollama Copilot",
+  "description": "Local AI Copilot using Ollama",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:ollama.openChat"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ollama.openChat",
+        "title": "Open Ollama Copilot"
+      }
+    ]
+  }
+}
